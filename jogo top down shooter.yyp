@@ -68,6 +68,7 @@
     {"id":{"name":"fnt_pontos_game","path":"fonts/fnt_pontos_game/fnt_pontos_game.yy",},},
     {"id":{"name":"fnt_pontos_hud","path":"fonts/fnt_pontos_hud/fnt_pontos_hud.yy",},},
     {"id":{"name":"fnt_principal","path":"fonts/fnt_principal/fnt_principal.yy",},},
+    {"id":{"name":"Lembretes","path":"notes/Lembretes/Lembretes.yy",},},
     {"id":{"name":"nota sobre a musica 2","path":"notes/nota sobre a musica 2/nota sobre a musica 2.yy",},},
     {"id":{"name":"obj_ak47","path":"objects/obj_ak47/obj_ak47.yy",},},
     {"id":{"name":"obj_arma_pai","path":"objects/obj_arma_pai/obj_arma_pai.yy",},},
