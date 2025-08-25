@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_sinal",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.075828,
+  "name":"snd_sinal",
+  "parent":{
+    "name":"outros",
+    "path":"folders/Sounds/outros.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_sinal.wav",
+  "type":0,
+  "volume":1.0,
+}

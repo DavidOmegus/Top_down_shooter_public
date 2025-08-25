@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_guarda_arma",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.417823,
+  "name":"snd_guarda_arma",
+  "parent":{
+    "name":"arma",
+    "path":"folders/Sounds/arma.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_guarda_arma.wav",
+  "type":0,
+  "volume":0.16,
+}

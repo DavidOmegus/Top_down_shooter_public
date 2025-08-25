@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_tiro_pistol",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.210204,
+  "name":"snd_tiro_pistol",
+  "parent":{
+    "name":"tiros",
+    "path":"folders/Sounds/arma/tiros.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_tiro_pistol.wav",
+  "type":0,
+  "volume":1.0,
+}
