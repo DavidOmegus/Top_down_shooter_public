@@ -5,10 +5,14 @@ event_inherited();
 life_max = 10;
 life_atual = life_max;
 
+//Velocidade
 spd = 1;
 hspd = 0;
 vspd = 0;
 dir = 0;
+
+//Estado
+estado = "livre";
 
 //tempo de invencibilidade
 timer_inv_total = 45;
