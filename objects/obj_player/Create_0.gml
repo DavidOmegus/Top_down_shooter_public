@@ -18,7 +18,7 @@ estado = "livre";
 timer_inv_total = 45;
 timer_inv_atual = timer_inv_total;
 
-//métodos do player
+#region métodos do player
 
 //método de movimentação
 movimentacao = function()
@@ -142,3 +142,59 @@ tomar_dano = function(_dano)
 		{ instance_create_layer(x,y,"inimigos",obj_enemy_pai); instance_destroy(); }
 	}
 }
+
+#endregion
+
+#region estados do player
+
+// - Livre
+estado_livre = function()
+{
+	//movimentando
+		movimentacao();
+		
+		//sacando a arma
+		saca_arma();
+		
+		//temporizando para o player poder tomar dano novamente
+		if !leva_dano
+		{
+			timer_inv_atual--;
+			if timer_inv_atual <= 0 { leva_dano = true; timer_inv_atual = timer_inv_total; }
+		}
+}
+
+// - Dash
+
+//variaveis do dash
+dash = true;
+can_dash = true;
+dash_delay_sec = .5;
+dash_delay = 60 * dash_delay_sec; //Não alterar\\
+dash_dir = 0;
+dash_power = 6;	
+dash_time = 0;
+dash_distance = 10;
+
+estado_dash = function()
+{
+	//Dash
+	hspd = lengthdir_x(dash_power,dash_dir);
+	vspd = lengthdir_y(dash_power,dash_dir);
+	
+	//Duração do dash
+	dash_time++;
+	if dash_time >= dash_distance 
+	{
+		//Acabou o dash, volta para o estado livre
+		dash_time = 0;
+		hspd = 0;
+		vspd = 0;
+		estado = "livre";
+	}
+	
+	x += hspd;
+	y += vspd;
+}
+
+#endregion
