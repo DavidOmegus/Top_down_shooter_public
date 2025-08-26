@@ -150,6 +150,7 @@ tomar_dano = function(_dano)
 // - Livre
 estado_livre = function()
 {
+	
 	//movimentando
 		movimentacao();
 		
@@ -172,12 +173,18 @@ can_dash = true;
 dash_delay_sec = .5;
 dash_delay = 60 * dash_delay_sec; //Não alterar\\
 dash_dir = 0;
-dash_power = 6;	
+dash_power = 5;	
 dash_time = 0;
-dash_distance = 10;
+dash_distance = 8;
 
 estado_dash = function()
 {
+	//invulnerável durante o dash
+	leva_dano = false;
+	
+	//atualiza a distancia do dash
+	dash_distance = 7 + global.nivel;
+	
 	//Dash
 	hspd = lengthdir_x(dash_power,dash_dir);
 	vspd = lengthdir_y(dash_power,dash_dir);
@@ -190,6 +197,7 @@ estado_dash = function()
 		dash_time = 0;
 		hspd = 0;
 		vspd = 0;
+		leva_dano = true;
 		estado = "livre";
 	}
 	

@@ -7,8 +7,10 @@ if life_atual > life_max { life_atual = life_max }
 
 switch estado
 {
-	case "livre": {
+	case "livre": 
 		
+		hspd = 0;
+		vspd = 0;
 		estado_livre();
 		
 		//Para dar o dash, deve apertar o shift, ter a habilidade do dash e poder dar
@@ -25,10 +27,10 @@ switch estado
 			dash_dir = point_direction(x,y,mouse_x,mouse_y);
 			estado = "dash"; 
 		}
-		
-	}
+		break;
 	
-	case "dash": {
+	case "dash":
+		
 		estado_dash();
-	}
+		break;
 }
