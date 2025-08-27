@@ -23,9 +23,28 @@ switch estado
 			alarm[0] = dash_delay;
 			hspd = 0;
 			vspd = 0;
+			
+			var _direita_dash = keyboard_check(ord("D"));
+			var _esquerda_dash = keyboard_check(ord("A"));
+			var _cima_dash = keyboard_check(ord("W"));
+			var _baixo_dash = keyboard_check(ord("S"));
+			//Retas
+			if _direita_dash 				{ dash_dir = 0 }
+			else if _esquerda_dash	{ dash_dir = 180 }
+			else if _cima_dash			{ dash_dir = 90 }
+			else if _baixo_dash			{ dash_dir = 270 }
+			//Diagonais
+			if _direita_dash and _cima_dash				{ dash_dir = 45 }
+			else if _direita_dash and _baixo_dash		{ dash_dir =315}
+			else if _esquerda_dash and _cima_dash	{ dash_dir = 135 }
+			else if _esquerda_dash and _baixo_dash	{ dash_dir =225 }
+			//Se nenhum botão de movimento estiver sendo pressionado
 			//define direção do dash como o mouse
-			dash_dir = point_direction(x,y,mouse_x,mouse_y);
+			if !_direita_dash and !_esquerda_dash and !_cima_dash and !_baixo_dash
+			{ dash_dir = point_direction(x,y,mouse_x,mouse_y); }
 			estado = "dash"; 
+			//som do dash
+			audio_play_sound(snd_dash,50,0,global.sfx_volume);
 		}
 		break;
 	

@@ -118,6 +118,7 @@
     {"id":{"name":"scr_xp","path":"scripts/scr_xp/scr_xp.yy",},},
     {"id":{"name":"snd_andando","path":"sounds/snd_andando/snd_andando.yy",},},
     {"id":{"name":"snd_bt_click","path":"sounds/snd_bt_click/snd_bt_click.yy",},},
+    {"id":{"name":"snd_dash","path":"sounds/snd_dash/snd_dash.yy",},},
     {"id":{"name":"snd_guarda_arma","path":"sounds/snd_guarda_arma/snd_guarda_arma.yy",},},
     {"id":{"name":"snd_leva_dano_en","path":"sounds/snd_leva_dano_en/snd_leva_dano_en.yy",},},
     {"id":{"name":"snd_leva_dano_player","path":"sounds/snd_leva_dano_player/snd_leva_dano_player.yy",},},

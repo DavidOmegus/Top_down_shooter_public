@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_bt_click",
+  "%Name":"snd_dash",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.095170066,
-  "name":"snd_bt_click",
+  "duration":0.42034015,
+  "name":"snd_dash",
   "parent":{
     "name":"outros",
     "path":"folders/Sounds/outros.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_bt_click.wav",
+  "soundFile":"snd_dash.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.53,
 }
